@@ -6,7 +6,7 @@ import Paper from 'material-ui/Paper';
 
 const style={padding:'10px',margin:'5px'}
 const index = () => (
-  <Layout title="Doctor's Dashboard">
+  <Layout title="Dashboard">
   <Paper style={style}>Welcome to this state-of-the-art Enterprise grade Web App!
     <br/>
     <RaisedButton label="Start" primary  style={{ margin: 12 }} />
