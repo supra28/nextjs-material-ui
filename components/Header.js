@@ -12,7 +12,7 @@ Router.onRouteChangeStart = (url) => {
 Router.onRouteChangeComplete = () => NProgress.done()
 Router.onRouteChangeError = () => NProgress.done()
 
-export default ({ title = 'Climbax Education' }) => (
+export default ({ title = 'Nextjs-Material-ui Demo' }) => (
   <div>
     <Head>
       <title>{title}</title>
