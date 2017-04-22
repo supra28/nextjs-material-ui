@@ -1,2 +1,2 @@
 # nextjs-material-ui
-nextjs with material-ui boilerplate
+Example on how to use nextjs with material-ui
