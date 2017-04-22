@@ -1,9 +1,7 @@
 import Head from 'next/head'
 import NProgress from 'nprogress'
 import Router from 'next/router'
-import NavBar from './NavBar'
 import React from 'react'
-import Drawer from './Drawer'
 
 Router.onRouteChangeStart = (url) => {
   console.log(`Loading: ${url}`)
@@ -12,7 +10,7 @@ Router.onRouteChangeStart = (url) => {
 Router.onRouteChangeComplete = () => NProgress.done()
 Router.onRouteChangeError = () => NProgress.done()
 
-export default ({ title = 'Nextjs-Material-ui Demo' }) => (
+export default ({ title = 'Nextjs Material-ui example' }) => (
   <div>
     <Head>
       <title>{title}</title>
@@ -21,11 +19,5 @@ export default ({ title = 'Nextjs-Material-ui Demo' }) => (
       <link rel='stylesheet' type='text/css' href='/static/nprogress.css' />
       <style>{`body { margin: 0; background-color:#fafafa;} `}</style>
     </Head>
-    <header>
-      <nav>
-      <NavBar/>
-      <Drawer/>
-      </nav>
-    </header>
   </div>
 )
