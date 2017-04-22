@@ -9,7 +9,6 @@ export default function initializePage(UI) {
       const { req } = ctx;
       const isServer = !!req;
       const userAgent = req ? req.headers['user-agent'] : navigator.userAgent;
-
       let pageProps = {};
 
       if (UI.getInitialProps) {

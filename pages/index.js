@@ -3,6 +3,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 import withMaterial from '../hocs/withMaterial'
 import AppLayout from '../components/AppLayout'
 import Paper from 'material-ui/Paper';
+import Layout from '../components/Layout'
 
 function toggleFullScreen() {
   if (!document.fullscreenElement &&    // alternative standard method
@@ -29,10 +30,11 @@ function toggleFullScreen() {
 
 
 const style={padding:'10px'}
-const index = () => (
+const index = (props) => (
   <AppLayout>
   <Paper style={style}>Welcome to this state-of-the-art Enterprise grade Web App!
     <br/>
+    {props.userAgent}
     <RaisedButton label="Start" primary  style={{ margin: 12 }} onTouchTap={toggleFullScreen}/>
   </Paper>
   </AppLayout>
