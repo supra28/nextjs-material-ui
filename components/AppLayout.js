@@ -13,7 +13,7 @@ import NoSSR from 'react-no-ssr';
 import MediaQuery from 'react-responsive';
 var classNames = require('classnames');
 
-const style = { margin: 5 };
+const style = { margin: 4 };
 
 class MyDrawer extends React.Component {
   state = {
@@ -141,7 +141,7 @@ export default class MyComponent extends React.Component {
           onLeftIconButtonTouchTap={this.handleToggle}
           title="YoLo"
           iconElementRight={
-            <Avatar size={30} style={style}>
+            <Avatar size={40} style={style}>
               A
             </Avatar>
           }
